@@ -54,12 +54,12 @@ Each new experimental project should be in its own subdirectory with:
 - Clear README explaining the project
 - Its own requirements.txt if needed
 - Proper test coverage
-- Following the coding standards in `.cursor/rules/coding-style.mdc`
+- Following clean coding standards
 
 ## Development Guidelines
 
 - Keep projects simple and focused
 - No over-engineering
-- Follow the coding rules in `.cursor/rules/coding-style.mdc`
+- Follow clean coding practices
 - Write tests with fixtures->run->assert pattern
 - Use minimal dependencies
