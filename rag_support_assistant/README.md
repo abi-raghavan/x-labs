@@ -53,7 +53,7 @@ TODO
 Uses Google AI Studio free tier (`gemini-2.5-flash` by default). No credit card required.
 
 1. Get a free API key at https://aistudio.google.com/apikey
-2. Locally: `export GEMINI_API_KEY=your_key`
+2. Locally: put key in `rag_support_assistant/.env` as `GEMINI_API_KEY=...` (gitignored) or `export GEMINI_API_KEY=your_key`
 3. Streamlit Cloud: add to app secrets as `GEMINI_API_KEY = "your_key"`
 4. Optional: `export GEMINI_MODEL=gemini-2.5-flash` to swap models on free tier
 5. Re-run ingest if you change the corpus: `python ingest.py`

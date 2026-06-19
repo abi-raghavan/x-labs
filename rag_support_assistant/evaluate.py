@@ -1,7 +1,9 @@
 import json
 import os
+import time
 from pathlib import Path
 
+import llm  # loads .env
 from embed import get_embedder, load_bm25, load_chunks, load_faiss_index
 from generate import generate_answer, judge_groundedness
 from retrieve import dense_search, recall_at_k, retrieve
@@ -54,6 +56,7 @@ def evaluate_config(eval_rows, mode, embedder, chunks, faiss_index, bm25_index, 
 
         contexts = [c for c in chunks if c["id"] in retrieved_ids[:5]]
         gen = generate_answer(query, contexts)
+        time.sleep(13)  # free tier: 5 req/min on gemini-2.5-flash
 
         if expect_refusal:
             hallucination_flags.append(0 if gen["refused"] else 1)
@@ -65,6 +68,7 @@ def evaluate_config(eval_rows, mode, embedder, chunks, faiss_index, bm25_index, 
             continue
 
         g_score, unsupported = judge_groundedness(query, gen["answer"], contexts)
+        time.sleep(13)
         groundedness_scores.append(g_score)
         hallucination_flags.append(1 if unsupported > 0 else 0)
 
