@@ -1,0 +1,26 @@
+[
+  {
+    "id": "docs_000",
+    "text": "## Getting Started\n\nInstall with pip install streamlit, then run streamlit run app.py. The app opens at localhost:8501.\n\n## Deployment\n\nPush to GitHub and connect the repo at share.streamlit.io. Pin dependencies in requirements.txt.\n\n## Secrets\n\nStore API keys in .streamlit/secrets.toml locally or in Streamlit Cloud Settings > Secrets. Never commit keys to git.\n\n## Caching",
+    "source": "docs.md",
+    "heading": "Product Documentation"
+  },
+  {
+    "id": "docs_001",
+    "text": "or in Streamlit Cloud Settings > Secrets. Never commit keys to git.\n\n## Caching\n\nUse @st.cache_data for DataFrames and arrays. Use @st.cache_resource for models and DB connections.\n\n## Session State\n\nUse st.session_state to keep values between reruns. Initialize keys before first use.\n\n## Layout\n\nUse st.columns, st.sidebar, and st.set_page_config(layout=\"wide\") for dashboard layouts.",
+    "source": "docs.md",
+    "heading": "Product Documentation"
+  },
+  {
+    "id": "docs_002",
+    "text": "olumns, st.sidebar, and st.set_page_config(layout=\"wide\") for dashboard layouts.\n\n## File Uploads\n\nUse st.file_uploader and read CSV with pd.read_csv(uploaded_file).\n\n## Charts\n\nRender Plotly charts with st.plotly_chart(fig, use_container_width=True).\n\n## Authentication\n\nStreamlit has no built-in auth. Use st.login, a custom login form, or SSO behind a reverse proxy.\n\n## Performance",
+    "source": "docs.md",
+    "heading": "Product Documentation"
+  },
+  {
+    "id": "docs_003",
+    "text": "se st.login, a custom login form, or SSO behind a reverse proxy.\n\n## Performance\n\nCache expensive work with @st.cache_data and @st.cache_resource. Avoid reloading large files on every rerun.",
+    "source": "docs.md",
+    "heading": "Product Documentation"
+  }
+]

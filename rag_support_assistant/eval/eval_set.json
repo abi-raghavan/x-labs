@@ -1,0 +1,14 @@
+[
+  {"question": "How do I install and run Streamlit?", "gold_chunk_ids": ["docs_000"]},
+  {"question": "How do I deploy to Streamlit Community Cloud?", "gold_chunk_ids": ["docs_000"]},
+  {"question": "Where should I store API keys?", "gold_chunk_ids": ["docs_000"]},
+  {"question": "What is the difference between cache_data and cache_resource?", "gold_chunk_ids": ["docs_001"]},
+  {"question": "How does session state work?", "gold_chunk_ids": ["docs_001"]},
+  {"question": "How do I create a wide layout dashboard?", "gold_chunk_ids": ["docs_001"]},
+  {"question": "How do I upload CSV files?", "gold_chunk_ids": ["docs_002"]},
+  {"question": "How do I display a Plotly chart?", "gold_chunk_ids": ["docs_002"]},
+  {"question": "Does Streamlit have built-in authentication?", "gold_chunk_ids": ["docs_002"]},
+  {"question": "How do I improve app performance?", "gold_chunk_ids": ["docs_003"]},
+  {"question": "What is the price of Streamlit Teams?", "gold_chunk_ids": [], "expect_refusal": true},
+  {"question": "How do I configure Kubernetes ingress?", "gold_chunk_ids": [], "expect_refusal": true}
+]
